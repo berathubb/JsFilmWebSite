@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="film.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="img/logo.jpg">
+    <title>ATEŞ FİLM</title>
+</head>
+
+<body>
+    <!--! Navbar -->
+    <div class="navbar">
+        <div class="navbar-wrapper">
+            <div class="logo-wrapper">
+                <a href="anasayfa.html"> <img src="img/logo.jpg" alt="logo"></a>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item active"><a href="anasayfa.html"> Ana Sayfa</a></li>
+                    <li class="menu-list-item"> <a href="film.html">Filmler</a></li>
+                    <li class="menu-list-item"><a href="dizi.html">Diziler</a></li>
+                    <li class="menu-list-item"><a href="liste.html">Listem</a></li>
+                    <li class="menu-list-item"><a href="kaydedilenler.html">Kaydedilenler</a></li>
+                    <li class="dropdown">
+                        <button class="dropbtn">Kategoriler
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">Aksiyon</a>
+                            <a href="#">Animasyon</a>
+                            <a href="#">Bilim Kurgu</a>
+                            <a href="#">Macera</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="profile-container">
+                <img class="profile-picture"
+                    src="img/profil-resim.jpg" alt="">
+                <div class="profile-text-container">
+                    <li class="dropdown">
+                        <button class="dropbtn">Hesabım
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">Hesabınızı Yönetin</a>
+                            <a href="#">Ateş Premium üyesi olun</a>
+                            <a href="#">Geçmiş</a>
+                            <a href="#">Oturumu Kapat</a>
+                        </div>
+                    </li>
+                </div>
+                <div class="toggle">
+                    <i class="bi bi-moon-fill toggle-icon"></i>
+                    <i class="bi bi-brightness-high-fill toggle-icon"></i>
+                    <div class="toggle-ball"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--! Navbar -->
+
+    <!--! Slidebar -->
+    <div class="sidebar">
+
+        <i class="fas fa-search" id="search-btn"></i>
+        <a href="anasayfa.html"><i class="bi bi-house-door-fill"></i></a>
+        <i class="bi bi-people-fill"></i>
+        <a href="kaydedilenler.html"><i class="bi bi-bookmarks-fill"></i></a>
+        <i class="bi bi-hourglass-top"></i>
+        <i class="bi bi-gear-fill"></i>
+    </div>
+    <div class="search-form">
+        <input type="text" class="search-input" id="search-box" placeholder="Burada Arayın">
+        <i class="fas fa-search"></i>
+    </div>
+    <!--! Slidebar -->
+
+
+    <!--! Genel İçerik -->
+    <div class="container">
+        <!--? Başlangıç Ekranı -->
+        <div class="content-wrapper">
+            <div class="featured-content">
+                <img class="featured-title"
+                    src="https://occ-0-2794-2219.1.nflxso.net/dnm/api/v6/tx1O544a9T7n8Z_G12qaboulQQE/AAAABTkojhnU0bpesrv4jievIbxojTBvuqbpS2yAmVWd94Bw8uCYS_QmAxZ88m9jXw_drA8MCpMTD-qbqCCjgh2im5eJuX988l_xrS9eDVy3QxsjYV2A09gn6vdHY-2IkeWgzrzUJGm0jfNMZU9noHxS0WVKlNq6nxB1-D6ebRoGy7y4-xhm8xWdxg.png?r=d59"
+                    alt="">
+                <div class="title-info">
+                    <h1 class="title-title">Hakan : Muhafız</h1>
+                </div>
+                <div class="title-info-metadata-wrapper">
+                    <span class="title-info-metadata-item item-year">2018</span>
+                    <span role="presentation" class="info-spacer"> | </span>
+                    <span class="title-info-metadata item-maturity">
+                        <span class="maturity-rating">
+                            <span class="screen-reader-text">Yetişkinlik Düzeyi :</span>
+                            <span class="maturity-number">16+</span>
+                        </span>
+                    </span>
+                    <span role="presentation" class="info-spacer">|</span>
+                    <span class="title-info-metadata-item item-runtime">
+                        <span class="duration">
+                            <span class="test_dur_str">4 sezon</span>
+                        </span>
+                    </span>
+                    <span role="presentation" class="info-spacer">|</span>
+                    <a class="title-info-metadata-item.item-genre
+                    " href="https://www.netflix.com/tr/browse/genre/637978">Fantastik</a>
+
+                </div>
+                <p class="featured-desc">
+                    Günümüz İstanbulu'nda yaşayan ve kadim bir gizli birlikle olan bağını keşfeden genç bir adam, şehri
+                    ölümsüz bir düşmandan kurtarmak için maceraya atılır.
+                </p>
+                <div class="title-info-talent">
+                    <div class="title-data-info item-starring">
+                        <span class="title-data-info-item-label">Başrollerdekiler : </span>
+                        <span class="title-data-info-item-list">Çağatay Ulusoy , Ayça Ayşin Turan , Hazar Ergüçlü</span>
+                    </div>
+                </div>
+                <div class="featured-buttons">
+                    <a href="https://yabancidizi.pro/dizi/hakan-muhafiz-the-protector-izle-4/sezon-1/bolum-1"
+                        target="_blank"><button class="play-button" style="margin-left: 50px;">
+                            <i class="bi bi-play-circle"></i>
+                            Oynat
+                        </button></a>
+                    <a href="https://www.netflix.com/tr/title/80189829" target=""><button class="info-button">
+                            <i class="bi bi-info-circle"></i>
+                            Daha Fazla Bilgi
+                        </button></a>
+                </div>
+            </div>
+        </div>
+        <!--? Başlangıç Ekranı -->
+
+        <!--! Başlangıç Ekranı -->
+
+
+        <!--! Film Listesi -->
+
+        <div class="movie-list-container">
+            <h1 class="movie-list-title">Popüler</h1>
+            <div class="movie-list-wrapper">
+                <ul class="movie-list">
+                    <li class="movie-item">
+                        <img class="movie-item-img" src="https://i.blogs.es/c5b918/image-7-/450_1000.webp" alt="">
+                        <div class="movie-item-info">
+                            <span class="movie-item-title">Iron Man 2</span>
+                            <div class="movie-item-buttons">
+                                <i class="bi bi-play-circle-fill"></i>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                <i class="bi bi-hand-thumbs-down-fill"></i>
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="movie-item">
+                        <img class="movie-item-img"
+                            src="https://images.justwatch.com/backdrop/9325182/s640/orumcek-adam-eve-donus.%7Bformat%7D"
+                            alt="">
+                        <div class="movie-item-info">
+                            <span class="movie-item-title">Örümcek Adam: Eve Dönüş</span>
+                            <div class="movie-item-buttons">
+                                <i class="bi bi-play-circle-fill"></i>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                <i class="bi bi-hand-thumbs-down-fill"></i>
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="movie-item">
+                        <img class="movie-item-img"
+                            src="https://im.haberturk.com/2023/08/24/3616473_f274c0382952f09d3fce2a9c555185bd_640x640.jpg"
+                            alt="">
+                        <div class="movie-item-info">
+                            <span class="movie-item-title">Yıldızlararası</span>
+                            <div class="movie-item-buttons">
+                                <i class="bi bi-play-circle-fill"></i>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                <i class="bi bi-hand-thumbs-down-fill"></i>
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="movie-item">
+                        <img class="movie-item-img" src="https://i.ytimg.com/vi/5TovIUB0rTA/maxresdefault.jpg" alt="">
+                        <div class="movie-item-info">
+                            <span class="movie-item-title">Yenilmezler 1</span>
+                            <div class="movie-item-buttons">
+                                <i class="bi bi-play-circle-fill"></i>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                <i class="bi bi-hand-thumbs-down-fill"></i>
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="movie-item">
+                        <img class="movie-item-img"
+                            src="https://bigumigu.com/wp-content/uploads/2008/12/x4046_8543_n.jpg" alt="">
+                        <div class="movie-item-info">
+                            <span class="movie-item-title">Bay Evet</span>
+                            <div class="movie-item-buttons">
+                                <i class="bi bi-play-circle-fill"></i>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                <i class="bi bi-hand-thumbs-down-fill"></i>
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="movie-item">
+                        <img class="movie-item-img"
+                            src="https://www.bikahvebikeyif.com/wp-content/uploads/hakan-muhafiz-4-sezon.jpg" alt="">
+                        <div class="movie-item-info">
+                            <span class="movie-item-title">Hakan : Muhafız</span>
+                            <div class="movie-item-buttons">
+                                <i class="bi bi-play-circle-fill"></i>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                <i class="bi bi-hand-thumbs-down-fill"></i>
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="movie-item">
+                        <img class="movie-item-img"
+                            src="https://sm.ign.com/ign_tr/news/s/spider-man/spider-man-no-way-home-beats-avatar-to-become-the-third-high_4ta2.jpg"
+                            alt="">
+                        <div class="movie-item-info">
+                            <span class="movie-item-title">Örümcek-Adam: Eve Dönüş Yok</span>
+                            <div class="movie-item-buttons">
+                                <i class="bi bi-play-circle-fill"></i>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                <i class="bi bi-hand-thumbs-down-fill"></i>
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+                <i class="bi bi-chevron-right arrow"></i>
+            </div>
+        </div>
+        <div class="movie-list-container">
+            <h1 class="movie-list-title">Gündemdekiler</h1>
+            <div class="movie-list-wrapper">
+                <ul class="movie-list">
+                    <li class="movie-item">
+                        <img class="movie-item-img"
+                            src="https://pliki.ppe.pl/storage/43af90d2481d8783e56d/43af90d2481d8783e56d.jpg" alt="">
+                        <div class="movie-item-info">
+                            <span class="movie-item-title">Batman 2</span>
+                            <div class="movie-item-buttons">
+                                <i class="bi bi-play-circle-fill"></i>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                <i class="bi bi-hand-thumbs-down-fill"></i>
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="movie-item">
+                        <img class="movie-item-img"
+                            src="https://image.cnnturk.com/i/cnnturk/75/740x416/601a5669214ed82080a32872.jpg" alt="">
+                        <div class="movie-item-info">
+                            <span class="movie-item-title">Dark</span>
+                            <div class="movie-item-buttons">
+                                <i class="bi bi-play-circle-fill"></i>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                <i class="bi bi-hand-thumbs-down-fill"></i>
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="movie-item">
+                        <img class="movie-item-img"
+                            src="https://cdn.kayiprihtim.com/wp-content/uploads/2022/06/sherlock-holmes-3-filmi-ne-zaman.jpg"
+                            alt="">
+                        <div class="movie-item-info">
+                            <span class="movie-item-title">Shrlock Holmes</span>
+                            <div class="movie-item-buttons">
+                                <i class="bi bi-play-circle-fill"></i>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                <i class="bi bi-hand-thumbs-down-fill"></i>
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="movie-item">
+                        <img class="movie-item-img"
+                            src="https://image.hurimg.com/i/hurriyet/75/750x422/63b43ae14e3fe019446491e6.jpg" alt="">
+                        <div class="movie-item-info">
+                            <span class="movie-item-title">Yenilmez 4</span>
+                            <div class="movie-item-buttons">
+                                <i class="bi bi-play-circle-fill"></i>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                <i class="bi bi-hand-thumbs-down-fill"></i>
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="movie-item">
+                        <img class="movie-item-img"
+                            src="https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/B30E313F0C8256215C9F1F2C7E5B764D4F8CC99D3580A383E41F07A180AF118D/scale?width=1200&aspectRatio=1.78&format=jpeg"
+                            alt="">
+                        <div class="movie-item-info">
+                            <span class="movie-item-title">Arabalar 2</span>
+                            <div class="movie-item-buttons">
+                                <i class="bi bi-play-circle-fill"></i>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                <i class="bi bi-hand-thumbs-down-fill"></i>
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="movie-item">
+                        <img class="movie-item-img"
+                            src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/67b69f7fb4b7d0244f258073ae1b3be1e274e28461b17a2cf1b9e1ec97b3c774._UY500_UX667_RI_TTW_.jpg"
+                            alt="">
+                        <div class="movie-item-info">
+                            <span class="movie-item-title">Ölüm Yarışı</span>
+                            <div class="movie-item-buttons">
+                                <i class="bi bi-play-circle-fill"></i>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                <i class="bi bi-hand-thumbs-down-fill"></i>
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="movie-item">
+                        <img class="movie-item-img"
+                            src="https://cdn1.ntv.com.tr/gorsel/dMwPc7ciTkO3BluggWw6OQ.jpg?width=1080&mode=crop&scale=both"
+                            alt="">
+                        <div class="movie-item-info">
+                            <span class="movie-item-title">Hızlı ve Öfkeli 9</span>
+                            <div class="movie-item-buttons">
+                                <i class="bi bi-play-circle-fill"></i>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                <i class="bi bi-hand-thumbs-down-fill"></i>
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+                <i class="bi bi-chevron-right arrow"></i>
+            </div>
+        </div>
+        <div class="movie-list-container">
+            <h1 class="movie-list-title">Yeni Çıkanlar</h1>
+            <div class="movie-list-wrapper">
+                <ul class="movie-list">
+                    <li class="movie-item">
+                        <img class="movie-item-img"
+                            src="https://www.koimoi.com/wp-content/new-galleries/2023/10/loki-season-2-review-mid-season-01.jpg"
+                            alt="">
+                        <div class="movie-item-info">
+                            <span class="movie-item-title">Loki 2.Sezon</span>
+                            <div class="movie-item-buttons">
+                                <i class="bi bi-play-circle-fill"></i>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                <i class="bi bi-hand-thumbs-down-fill"></i>
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="movie-item">
+                        <img class="movie-item-img" src="https://typelish.com/c/Pl34Pdb" alt="">
+                        <div class="movie-item-info">
+                            <span class="movie-item-title">Doctor Strange In The Multiverse Of Madness</span>
+                            <div class="movie-item-buttons">
+                                <i class="bi bi-play-circle-fill"></i>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                <i class="bi bi-hand-thumbs-down-fill"></i>
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="movie-item">
+                        <img class="movie-item-img"
+                            src="https://idseducation.com/wp-content/uploads/2021/07/7.-Black-Widow.jpeg" alt="">
+                        <div class="movie-item-info">
+                            <span class="movie-item-title">Black Widow</span>
+                            <div class="movie-item-buttons">
+                                <i class="bi bi-play-circle-fill"></i>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                <i class="bi bi-hand-thumbs-down-fill"></i>
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="movie-item">
+                        <img class="movie-item-img"
+                            src="https://s-cdn-sj.eu-central-1.linodeobjects.com/n/310/04871.webp" alt="">
+                        <div class="movie-item-info">
+                            <span class="movie-item-title">Terzi</span>
+                            <div class="movie-item-buttons">
+                                <i class="bi bi-play-circle-fill"></i>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                <i class="bi bi-hand-thumbs-down-fill"></i>
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="movie-item">
+                        <img class="movie-item-img"
+                            src="https://img.internethaber.com/rcman/Cw1280h720q95gc/storage/files/images/2023/07/19/oppenheimer-R0AB_cover.jpg"
+                            alt="">
+                        <div class="movie-item-info">
+                            <span class="movie-item-title">Oppenheimer</span>
+                            <div class="movie-item-buttons">
+                                <i class="bi bi-play-circle-fill"></i>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                <i class="bi bi-hand-thumbs-down-fill"></i>
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="movie-item">
+                        <img class="movie-item-img"
+                            src="https://imgrosetta.mynet.com.tr/file/17662979/7b2270726f63657373223a7b2274797065223a22666f637573222c22636f6f7264696e61746573223a7b2278223a22302e3132222c2279223a22302e3635227d7d7d/17662979-728xauto.jpg"
+                            alt="">
+                        <div class="movie-item-info">
+                            <span class="movie-item-title">Kızılcık Şerbeti</span>
+                            <div class="movie-item-buttons">
+                                <i class="bi bi-play-circle-fill"></i>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                <i class="bi bi-hand-thumbs-down-fill"></i>
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="movie-item">
+                        <img class="movie-item-img"
+                            src="https://imgrosetta.mynet.com.tr/file/16816418/16816418-1200x824.jpg" alt="">
+                        <div class="movie-item-info">
+                            <span class="movie-item-title">Iron Man 3</span>
+                            <div class="movie-item-buttons">
+                                <i class="bi bi-play-circle-fill"></i>
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                <i class="bi bi-hand-thumbs-down-fill"></i>
+                                <i class="bi bi-plus-circle-fill"></i>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+                <i id="right" class="bi bi-chevron-right arrow"></i>
+            </div>
+        </div>
+
+        <!--! Film Listesi -->
+
+    </div>
+
+
+    <script src="film.js"></script>
+
+</body>
+
+</html>
